@@ -450,6 +450,7 @@
   {
     "license_name": "Apache 2.0",
     "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
     "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
     "name": "Qwen3-8B",
     "provider_url": "https://huggingface.co/Qwen/Qwen3-8B/",
