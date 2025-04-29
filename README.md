@@ -47,6 +47,7 @@ To ensure optimal response quality, and given that latency requirements are not 
 | [Qwen2.5-Coder-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [Qwen2-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2-1.5B) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
+| [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B/) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 | [Codestral-22B](https://huggingface.co/mistralai/Codestral-22B-v0.1) | [Mistral AI Non-Production License](https://mistral.ai/licenses/MNPL-0.1.md) |
 | [Yi-Coder-9B-Chat](https://huggingface.co/01-ai/Yi-Coder-9B-Chat) | [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) |
 

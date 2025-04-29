@@ -393,6 +393,21 @@
     ],
     "sha256": "1fabf28bda17e96824bacc29e43b09ec4ba8a82d190f700cbdd1286586a05311"
   },
+
+
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
+    "name": "Qwen3-8B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen3-8B/",
+    "urls": [
+      "https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF/blob/main/Qwen_Qwen3-8B-Q5_K_M.gguf"
+    ],
+    "sha256": "fa45032e10b515a10374426bee3a41d5340aa78b67f0bed503469479a9772d9b"
+  },
+
+
   {
     "license_name": "Mistral AI Non-Production License",
     "license_url": "https://mistral.ai/licenses/MNPL-0.1.md",
