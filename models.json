@@ -395,17 +395,7 @@
   },
 
 
-  {
-    "license_name": "Apache 2.0",
-    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
-    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
-    "name": "Qwen3-8B",
-    "provider_url": "https://huggingface.co/Qwen/Qwen3-8B/",
-    "urls": [
-      "https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF/blob/main/Qwen_Qwen3-8B-Q5_K_M.gguf"
-    ],
-    "sha256": "fa45032e10b515a10374426bee3a41d5340aa78b67f0bed503469479a9772d9b"
-  },
+
 
 
   {
@@ -461,5 +451,17 @@
       "https://huggingface.co/wsxiaoys/Yi-Coder-9B-Chat-Q8_0-GGUF/resolve/main/yi-coder-9b-chat-q8_0.gguf"
     ],
     "sha256": "23b4408c9a621bc563ed9f998a7929776ba50f5102ed2c2436b2f917404b05e7"
-  }
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a helpful assistant<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}",
+    "name": "Qwen3-8B",
+    "provider_url": "https://huggingface.co/Qwen/Qwen3-8B/",
+    "urls": [
+      "https://huggingface.co/bartowski/Qwen_Qwen3-8B-GGUF/blob/main/Qwen_Qwen3-8B-Q5_K_M.gguf"
+    ],
+    "sha256": "fa45032e10b515a10374426bee3a41d5340aa78b67f0bed503469479a9772d9b"
+  },
 ]
